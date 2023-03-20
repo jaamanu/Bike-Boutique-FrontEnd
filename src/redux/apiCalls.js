@@ -1,7 +1,7 @@
 /* eslint-disable */
 import { publicRequest } from "../request";
-import { loginFailure, loginStart, loginSuccess } from "./user/user"
-import { vehicleFailure, vehicleStart, vehicleSuccess } from "./vehicles/vehicle";
+import { loginFailure, loginStart, loginSuccess } from "./user/user";
+import { addFailure, addStart, addSuccess } from "./vehicles/addVehicle";
 
 export const login = async (dispatch, user) => {
   dispatch(loginStart());
@@ -30,14 +30,15 @@ export const createUser = async (dispatch, user) => {
   }
 }
 
-// export const getVehicleId = async (dispatch, vehicle) => {
-//   dispatch(vehicleStart());
-//   try {
-//     const res = await publicRequest.post(`/motorcycles/:id`, vehicle)
-//     const responseData = res.data;
-//     delete responseData.headers;
-//     dispatch(vehicleSuccess(responseData))
-//   } catch (err) {
-//     dispatch(vehicleFailure())
-//   }
-// }
+export const addVehicle = async (dispatch, details) => {
+  dispatch(addStart());
+  try {
+    const res = await publicRequest.post("/motorcycles", details)
+    const responseData = res.data;
+    delete responseData.headers;
+    dispatch(addSuccess(responseData))
+
+  } catch (err) {
+    dispatch(addFailure())
+  }
+}
