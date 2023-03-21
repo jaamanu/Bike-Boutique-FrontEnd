@@ -32,10 +32,10 @@ const Nav = () => {
             <RiAddCircleLine />
             Add a reservation
           </li>
-          <li className="link">
+          <NavLink to = "/addvehicle" className="link">
             <RiAddCircleLine />
             Add a vehicle
-          </li>
+          </NavLink>
           <li className="link">
             <RiDeleteBin6Line />
             Delete a vehicle

@@ -9,6 +9,7 @@ import Splash from './components/auth/Splash'
 import Nav from './components/left/Nav';
 import Vehicles from './components/pages/Vehicles';
 import VehiclesDetails from './components/pages/VehiclesDetails';
+import AddVehicles from './components/pages/AddVehicles';
 
 function App() {
   const { currentUser } = useSelector((state) => state.user)
@@ -23,6 +24,7 @@ function App() {
           <Routes>
             <Route path={"/reservations"} element={currentUser ? <Reservations /> : <Navigate to="/" />} />
             <Route path={"/details/:id"} element={currentUser ? <VehiclesDetails /> : <Navigate to="/" />} />
+            <Route path={"/addvehicle"} element={currentUser ? <AddVehicles /> : <Navigate to="/" />} />
             <Route index element={currentUser ? <Vehicles /> : <Splash />} />
             <Route path="/login" element={currentUser ? <Navigate to="/" /> : <Login />} />
             <Route path="/register" element={currentUser ? <Navigate to="/" /> : <Register />} />
