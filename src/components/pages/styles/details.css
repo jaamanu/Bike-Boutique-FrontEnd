@@ -1,34 +1,34 @@
-.detailsWordsDiv>div {
-    font-size: 15px;
-    font-weight: 600;
-    padding: 0.5rem;
-    display: flex;
-    justify-content: space-between;
+.detailsWordsDiv > div {
+  font-size: 15px;
+  font-weight: 600;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
 }
 
-.detailsWordsDiv>h2 {
-    font-weight: 600;
+.detailsWordsDiv > h2 {
+  font-weight: 600;
 }
 
-.detailsSm>h2 {
-    font-weight: 600;
-    font-size: 25px;
-    margin-bottom: 1rem;
+.detailsSm > h2 {
+  font-weight: 600;
+  font-size: 25px;
+  margin-bottom: 1rem;
 }
 
 .detailsDiv {
-    display: flex;
-    justify-content: space-between;
-    padding: 5% 2rem;
-    font-family: sans-serif;
-    text-align: end;
+  display: flex;
+  justify-content: space-between;
+  padding: 5% 2rem;
+  font-family: sans-serif;
+  text-align: end;
 }
 
-.detailsWordsDiv>div:nth-child(odd) {
-    background: #c5c5c7;
-    color: #2e2d2d;
+.detailsWordsDiv > div:nth-child(odd) {
+  background: #c5c5c7;
+  color: #2e2d2d;
 }
 
-.detailsWordsDiv>div>p {
-    margin-right: 1rem;
+.detailsWordsDiv > div > p {
+  margin-right: 1rem;
 }
