@@ -1,15 +1,15 @@
 // /* eslint-disable */
-import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
 const initialState = {
   vehicles: [],
-  status: null
-}
+  status: null,
+};
 
 export const getVehicles = createAsyncThunk('vehicles/vehicles', async () => {
   const response = await fetch('http://localhost:3000/api/v1/motorcycles');
   const data = await response.json();
-  console.log(response)
+  console.log(response);
   return data;
 });
 
@@ -28,9 +28,9 @@ const vehicleSlice = createSlice({
     reduce
       .addCase(getVehicles.fulfilled, (state, action) => {
         const isFulfilled = state;
-        isFulfilled.status = 'Fulfilled'
-        isFulfilled.vehicles = action.payload
-      })
+        isFulfilled.status = 'Fulfilled';
+        isFulfilled.vehicles = action.payload;
+      });
   },
 });
 
