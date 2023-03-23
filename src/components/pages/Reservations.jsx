@@ -1,7 +1,9 @@
 /* eslint-disable */
 import './../pages/styles/reservations.css'
+
 import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux';
+import { deleteReservation } from '../../redux/apiCalls';
 
 const Reservations = () => {
     const [reservations, getReservations] = useState([])
@@ -13,6 +15,11 @@ const Reservations = () => {
         return data;
     };
 
+    const deleteIt = async (id) => {
+        await deleteReservation(id)
+        getReservation()
+    }
+
     useEffect(() => {
         getReservation()
     }, [])
@@ -20,7 +27,14 @@ const Reservations = () => {
     return (
         <div className="reservationsDiv">
             {reservations.map((reserv) => (
-                <p>{reserv.city}</p>
+                <div key={reserv.id}>
+                    <h1>RESERVED</h1>
+                    {/* <p>{reserv.motorcycle.name}</p> */}
+                    <p>{reserv.city}</p>
+                    <p>{reserv.start_date}</p>
+                    <p>{reserv.end_date}</p>
+                    <button type='submit' onClick={() => deleteIt(reserv.id)}>Delete</button>
+                </div>
             ))}
         </div>
     )

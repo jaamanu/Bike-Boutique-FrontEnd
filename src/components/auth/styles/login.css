@@ -26,6 +26,7 @@
 
 .LoginDiv {
   height: 100vh;
+  background-color: yellow;
   background: linear-gradient(rgba(182, 175, 175, 0.2) 0, #53fa05cc 0);
   display: flex;
   justify-content: center;
