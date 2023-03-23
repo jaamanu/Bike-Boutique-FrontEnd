@@ -33,9 +33,8 @@ Booking application
 [Presentation of APP](Cooming soom)
 
 # Live Demo Application link
-
-- [FrontEndrepo](https://github.com/jaamanu/user_interface)
-- [BackEndrepo](https://github.com/eerapheal/Full_stack_project)
+[FrontEndrepo](https://github.com/eerapheal/Full_stack_project)
+[BackENDrepo](https://github.com/eerapheal/Full_stack_project)
 
 ## 🛠️ Built With <a name="built-with"></a>
 

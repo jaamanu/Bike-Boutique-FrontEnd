@@ -40,7 +40,7 @@ const Vehicles = () => {
 
     return (
         <div className="vehiclesDiv">
-            <h2>All Vehicles</h2>
+            <h1>FAST-BIKES</h1>
             <div className="vehicles">
             <Swiper
                 modules={[Navigation, Pagination, Scrollbar, A11y]}
@@ -50,7 +50,7 @@ const Vehicles = () => {
                     pagination={{ clickable: true }}
                 >
                 {vehicle.vehicles.map((veh) => (
-                    <SwiperSlide>Slide 1
+                    <SwiperSlide>
                     <div className="vehicleDiv">
                         <img src={veh.image} className="vehicleImg" alt="" />
                         <h3>{veh.name}</h3>

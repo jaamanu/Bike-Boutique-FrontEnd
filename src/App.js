@@ -10,6 +10,7 @@ import Nav from './components/left/Nav';
 import Vehicles from './components/pages/Vehicles';
 import VehiclesDetails from './components/pages/VehiclesDetails';
 import AddVehicles from './components/pages/AddVehicles';
+import AddReservation from './components/pages/AddReservation';
 
 function App() {
   const { currentUser } = useSelector((state) => state.user)
