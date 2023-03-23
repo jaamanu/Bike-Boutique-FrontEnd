@@ -5,13 +5,13 @@ import { createUser } from '../../redux/apiCalls';
 import './styles/login.css';
 
 const Register = () => {
-  const [name, setName] = useState('')
-  const dispatch = useDispatch()
+  const [name, setName] = useState('');
+  const dispatch = useDispatch();
 
   const registerUser = (e) => {
-    e.preventDefault()
-    createUser(dispatch, { name })
-  }
+    e.preventDefault();
+    createUser(dispatch, { name });
+  };
   return (
     <div className="LoginDiv">
       <form className="LoginForm">

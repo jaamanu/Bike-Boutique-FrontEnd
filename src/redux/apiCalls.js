@@ -42,3 +42,13 @@ export const addVehicle = async (dispatch, details) => {
     dispatch(addFailure())
   }
 }
+export const addReservation = async (dispatch, id, reserv) => {
+  try {
+    const res = await publicRequest.post(`/reservations/user/${id}`, reserv)
+    const responseData = res.data;
+    delete responseData.headers;
+    dispatch(addSuccess(responseData))
+  } catch (error) {
+
+  }
+}
