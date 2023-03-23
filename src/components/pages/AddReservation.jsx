@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { addReservation } from '../../redux/apiCalls'
 import { useNavigate } from 'react-router-dom'
+import './styles/addreservation.css'
 
 const AddReservation = () => {
     const [city, setCity] = useState('')
