@@ -79,7 +79,7 @@ const AddReservation = () => {
                 <input type="text" placeholder='Enter city' onChange={(e) => setCity(e.target.value)} />
                 <input type="date" placeholder='Enter city' onChange={(e) => setStartDate(e.target.value)} />
                 <input type="date" placeholder='Enter city' onChange={(e) => setEnddate(e.target.value)} />
-                <button type="submit" onClick={addReserv}>buutton</button>
+                <button type="submit" onClick={addReserv}>button</button>
                 {
                     <span>
                         {dateErr && <span>{dateErr}</span>}
