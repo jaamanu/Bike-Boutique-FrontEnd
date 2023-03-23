@@ -22,6 +22,7 @@ function App() {
         </div>}
         <div className="navRoute">
           <Routes>
+          <Route path={"/addreservation"} element={currentUser ? <AddReservation /> : <Navigate to="/" />} />
             <Route path={"/reservations"} element={currentUser ? <Reservations /> : <Navigate to="/" />} />
             <Route path={"/details/:id"} element={currentUser ? <VehiclesDetails /> : <Navigate to="/" />} />
             <Route path={"/addvehicle"} element={currentUser ? <AddVehicles /> : <Navigate to="/" />} />
