@@ -30,11 +30,11 @@ Booking application
 
 ## Project presentation link
 
-[Presentation of APP](Cooming soom)
-
-# Live Demo Application link
+[Presentation of APP]
 - [FrontEndrepo](https://github.com/eerapheal/Full_stack_project)
 - [BackENDrepo](https://github.com/eerapheal/Full_stack_project)
+
+# Live Demo Application link (coming soon)
 
 ## 🛠️ Built With <a name="built-with"></a>
 
