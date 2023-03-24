@@ -1,7 +1,6 @@
 /* eslint-disable */
 import React, { useEffect, useState } from 'react'
-import './styles/vehicle.css'
-// import img from '../../assets/bike.jpg'
+import './styles/vehicle.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom'
 import { getVehicles } from '../../redux/vehicles/vehicles';
@@ -9,9 +8,6 @@ import { getVehicles } from '../../redux/vehicles/vehicles';
 import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
-// import { createAsyncThunk } from '@reduxjs/toolkit';
-// import VehiclesDetails from './VehiclesDetails';
-// import { getVehicleId } from '../../redux/vehicles/vehicles';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -42,25 +38,49 @@ const Vehicles = () => {
         <div className="vehiclesDiv">
             <h1>FAST-BIKES</h1>
             <div className="vehicles">
-            <Swiper
-                modules={[Navigation, Pagination, Scrollbar, A11y]}
-                    spaceBetween={50}
+                <Swiper
+                    modules={[Navigation, Pagination, Scrollbar, A11y]}
+                    spaceBetween={10}
                     slidesPerView={3}
                     navigation
                     pagination={{ clickable: true }}
+                    breakpoints={{
+                        0: {
+                          slidesPerView: 1,
+                        },
+                        400:{
+                          slidesPerView:2,
+                        },
+                        639: {
+                          slidesPerView: 3,
+                        },
+                        865:{
+                          slidesPerView:4
+                        },
+                        1000:{
+                          slidesPerView:5
+                        },
+                        1500:{
+                          slidesPerView:6
+                        },
+                        1700:{
+                          slidesPerView:7
+                        }
+                      }}
+
                 >
-                {vehicle.vehicles.map((veh) => (
-                    <SwiperSlide>
-                    <div className="vehicleDiv">
-                        <img src={veh.image} className="vehicleImg" alt="" />
-                        <h3>{veh.name}</h3>
-                        <p>{veh.description}</p>
-                        <NavLink onClick={getId(veh.id)} state={veh} to={`/details/${veh.id}`}>
-                            {veh.id}
-                        </NavLink>
-                    </div>
-                    </SwiperSlide>
-                ))}
+                    {vehicle.vehicles.map((veh) => (
+                        <SwiperSlide>
+                            <div className="vehicleDiv">
+                                <img src={veh.image} className="vehicleImg" alt="" />
+                                <h3>{veh.name}</h3>
+                                <p>{veh.description}</p>
+                                <NavLink onClick={getId(veh.id)} state={veh} to={`/details/${veh.id}`}>
+                                    {veh.id}
+                                </NavLink>
+                            </div>
+                        </SwiperSlide>
+                    ))}
                 </Swiper>
             </div>
         </div>

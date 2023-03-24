@@ -1,9 +1,9 @@
 .detailsWordsDiv > div {
   font-size: 15px;
   font-weight: 600;
-  padding: 0.5rem;
+width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .detailsWordsDiv > h2 {
@@ -19,9 +19,10 @@
 .detailsDiv {
   display: flex;
   justify-content: space-between;
-  padding: 5% 2rem;
+  padding: 0.5rem;
   font-family: sans-serif;
-  text-align: end;
+  text-align: start;
+  width: 100%;
 }
 
 .detailsWordsDiv > div:nth-child(odd) {
@@ -30,5 +31,20 @@
 }
 
 .detailsWordsDiv > div > p {
-  margin-right: 1rem;
+
+  text-align: left;
+ 
+}
+
+@media (max-width: 768px) {
+  .detailsDiv {
+    flex-direction: column;
+    margin-top: 70px;
+  }
+
+  .motorcycle-info {
+    width: 100%;
+    flex-grow: 1;
+  }
+
 }

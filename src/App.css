@@ -14,7 +14,7 @@
 .navApp {
   flex: 1;
   border-right: 1px solid #111;
-  width: 30%;
+  width: 35%;
 }
 
 .navRoute {
@@ -25,4 +25,11 @@
 .AppDiv {
   height: 100vh;
   border: 1px solid #111;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .app {
+    flex-direction: column;
+  }
 }
