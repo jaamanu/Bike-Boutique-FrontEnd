@@ -29,7 +29,6 @@ const Reservations = () => {
             {reservations.map((reserv) => (
                 <div key={reserv.id}>
                     <h1>RESERVED</h1>
-                    {/* <p>{reserv.motorcycle.name}</p> */}
                     <p>{reserv.city}</p>
                     <p>{reserv.start_date}</p>
                     <p>{reserv.end_date}</p>

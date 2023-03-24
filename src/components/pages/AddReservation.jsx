@@ -6,7 +6,6 @@ import { useNavigate } from 'react-router-dom'
 
 const AddReservation = () => {
     const [city, setCity] = useState('')
-    // const [, setCity] = useState('')
     const [endDate, setEnddate] = useState('')
     const [startDate, setStartDate] = useState('')
     const [motorcycles, setMotorcycle] = useState('')

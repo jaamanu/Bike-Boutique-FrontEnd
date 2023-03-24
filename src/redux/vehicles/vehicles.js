@@ -12,13 +12,6 @@ export const getVehicles = createAsyncThunk('vehicles/vehicles', async () => {
   return data;
 });
 
-// export const getVehicleId = createAsyncThunk('vehicles/vehicles', async () => {
-//   const response = await fetch('http://localhost:3000/api/v1/motorcycles/:id');
-//   const data = await response.json();
-//   console.log(response)
-//   return data;
-// });
-
 const vehicleSlice = createSlice({
   name: 'vehicles',
   initialState,

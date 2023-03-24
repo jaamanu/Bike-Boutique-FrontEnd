@@ -12,7 +12,7 @@ import VehiclesDetails from './components/pages/VehiclesDetails';
 import AddVehicles from './components/pages/AddVehicles';
 import AddReservation from './components/pages/AddReservation';
 
-function App() {
+const App = () =>{
   const { currentUser } = useSelector((state) => state.user)
   console.log(currentUser)
   return (
