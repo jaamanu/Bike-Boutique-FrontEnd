@@ -41,9 +41,10 @@ Booking application
 - Ruby on Rails
 - Postgresql
 - Capybera
+- React
+- Redux
 - Rspec
-- Cancancan
-- Devise
+
 
 ### Key Features <a name="key-features"></a>
 
@@ -63,43 +64,33 @@ To get a local copy up and running, follow these steps.
 In order to run this project you need:
 
 - A code editor
-- Ruby installed
-- Ruby on Rails installed
-- Postgresql installed
+- React installed
+- Redux installed
 
 ### Setup
 
 Clone this repository to your desired folder:
-https://github.com/eerapheal/Full_stack_project.git
+https://github.com/jaamanu/user_interface.git
 ```
- cd Full_stack_project
+ cd user_interface
 ```
 
 
 ### Install
 install this project with:
 ```
-  bundle install
+  npm install
   ```
-  ```
-  rails db:create
-  ```
-  ```
-  rails db:migrate
-```
 
 ### Start 
 To start the application, run the following command
 ```
-rails server
+npm run start
 ```
 ### Run tests 
 ```
-rspec
+jest test
 ```
-### Usage
-
-To run the project, run `ruby <filename>` in your terminal
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -136,7 +127,7 @@ To run the project, run `ruby <filename>` in your terminal
 ## 🔭 Future Features <a name="future-features"></a>
 
 - **Set up payment stytem**
-- **Add UI**
+- **Delete Motorcyle**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -151,7 +142,7 @@ To run the project, run `ruby <filename>` in your terminal
 - Push to the branch (git push origin my-new-feature)
 - Create new Pull Request.
 
-Feel free to check the [issues page](https://github.com/eerapheal/Full_stack_project/issues).
+Feel free to check the [issues page](https://github.com/jaamanu/user_interface/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
