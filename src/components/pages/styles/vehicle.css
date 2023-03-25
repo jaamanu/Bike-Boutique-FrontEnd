@@ -37,6 +37,14 @@ p {
   font-family: 'Poppins', sans-serif;
 }
 
+.reserve-link {
+  margin: 0;
+  height: 2rem;
+  font-size: 21px;
+  text-decoration: none;
+  color: blue;
+}
+
 .vehicles {
   display: flex;
   flex-direction: row;
