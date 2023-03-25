@@ -51,8 +51,8 @@ const AddReservation = () => {
     }
 
     return (
-        <div className="ReserveDiv">
-            <form className='ReserveForm'>
+        <div className="LoginDiv">
+            <form className='LoginForm'>
                 <select onChange={(e) => setMotorcycle(e.target.value)} name="" id="">
                     {vehicle.vehicles.map((vehicle) => {
                         console.log(motorcycles)
