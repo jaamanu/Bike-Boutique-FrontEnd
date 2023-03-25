@@ -3,9 +3,11 @@ import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { addReservation } from '../../redux/apiCalls'
 import { useNavigate } from 'react-router-dom'
+import './styles/addvehicles.css'
 
 const AddReservation = () => {
     const [city, setCity] = useState('')
+    // const [, setCity] = useState('')
     const [endDate, setEnddate] = useState('')
     const [startDate, setStartDate] = useState('')
     const [motorcycles, setMotorcycle] = useState('')
@@ -38,7 +40,7 @@ const AddReservation = () => {
         else {
             setCityErr(null)
         }
-        if (startDate < formatDate) {
+        if (startDate != formatDate) {
             // console.log(true)
             setDateErr('Start date cannot be in the past')
             return false
@@ -78,7 +80,7 @@ const AddReservation = () => {
                 <input type="text" placeholder='Enter city' onChange={(e) => setCity(e.target.value)} />
                 <input type="date" placeholder='Enter city' onChange={(e) => setStartDate(e.target.value)} />
                 <input type="date" placeholder='Enter city' onChange={(e) => setEnddate(e.target.value)} />
-                <button type="submit" onClick={addReserv}>Add</button>
+                <button type="submit" onClick={addReserv}>button</button>
                 {
                     <span>
                         {dateErr && <span>{dateErr}</span>}
