@@ -72,11 +72,10 @@ const Vehicles = () => {
                     {vehicle.vehicles.map((veh) => (
                         <SwiperSlide>
                             <div className="vehicleDiv">
+                            <NavLink onClick={getId(veh.id)} state={veh} to={`/details/${veh.id}`}>
                                 <img src={veh.image} className="vehicleImg" alt="" />
                                 <h3>{veh.name}</h3>
                                 <p>{veh.description}</p>
-                                <NavLink onClick={getId(veh.id)} state={veh} to={`/details/${veh.id}`}>
-                                    {veh.id}
                                 </NavLink>
                             </div>
                         </SwiperSlide>
