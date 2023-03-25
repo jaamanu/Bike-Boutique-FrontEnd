@@ -2,6 +2,7 @@
 import { publicRequest } from "../request";
 import { loginFailure, loginStart, loginSuccess } from "./user/user";
 import { addFailure, addStart, addSuccess } from "./vehicles/addVehicle";
+import { addReservation } from './reservation/reservation';
 
 export const login = async (dispatch, user) => {
   dispatch(loginStart());
@@ -43,22 +44,12 @@ export const addVehicle = async (dispatch, details) => {
   }
 }
 
-export const addReservation = async (dispatch, id, reserv) => {
+export const getReservation = async (reservation) => {
   try {
-    const res = await publicRequest.post(`/reservations/user/${id}`, reserv)
-    const responseData = res.data;
-    delete responseData.headers;
-    dispatch(addSuccess(responseData))
+    dispatch(addReservation(reservation));
+    const res = await publicrequest.post('/add-reservation', reservation);
+    console.log(res.data);
   } catch (error) {
-
-  }
-}
-
-export const deleteReservation = async (id) => {
-  try {
-    const res = await publicRequest.delete(`/reservations/${id}`)
-    return res
-  } catch (error) {
-
+    console.log(error);
   }
 }

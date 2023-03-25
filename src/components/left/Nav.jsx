@@ -36,10 +36,10 @@ const Nav = () => {
             <RiAddCircleLine />
             Add a vehicle
           </NavLink>
-          <NavLink to = "/deletevehicle" className="link">
+          {/* <NavLink to = "/reservations" className="link">
             <RiAddCircleLine />
             Delete a vehicle
-          </NavLink>
+          </NavLink> */}
           <li className="link" onClick={logouts}>
             <RiLogoutCircleLine />
             Log out
