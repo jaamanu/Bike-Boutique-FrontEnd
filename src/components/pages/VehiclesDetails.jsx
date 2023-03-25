@@ -33,7 +33,7 @@ const VehiclesDetails = () => {
             <p>{state.available.toLocaleString()}</p>
           </div>
           <div>
-          <button type="button"> Reserve </button>
+            <button type="button"> Reserve </button>
           </div>
         </div>
       </div>

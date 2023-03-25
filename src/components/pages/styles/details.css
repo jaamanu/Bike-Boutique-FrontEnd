@@ -1,7 +1,7 @@
 .detailsWordsDiv > div {
   font-size: 15px;
   font-weight: 600;
-width: 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
 }
@@ -31,9 +31,7 @@ width: 100%;
 }
 
 .detailsWordsDiv > div > p {
-
   text-align: left;
- 
 }
 
 @media (max-width: 768px) {
@@ -46,5 +44,4 @@ width: 100%;
     width: 100%;
     flex-grow: 1;
   }
-
 }
