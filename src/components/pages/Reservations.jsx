@@ -6,7 +6,10 @@ import { useSelector } from 'react-redux';
 
 const Reservations = () => {
     const currentUser = useSelector(state => state.currentUser);
+<<<<<<< HEAD
 
+=======
+>>>>>>> 504e1fc91f52ee4c65d4242107a0be8d619a8a96
     const getReservation = async () => {
         if (!currentUser) {
             return;

@@ -14,7 +14,11 @@
     "react-redux": "^8.0.5",
     "react-router-dom": "^6.9.0",
     "react-script": "^2.0.5",
+<<<<<<< HEAD
     "react-scripts": "^5.0.1",
+=======
+    "react-scripts": "^2.1.8",
+>>>>>>> 504e1fc91f52ee4c65d4242107a0be8d619a8a96
     "redux-persist": "^6.0.0",
     "swiper": "^9.1.1",
     "web-vitals": "^2.1.4"
@@ -55,6 +59,7 @@
     "eslint-plugin-jsx-a11y": "^6.7.1",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "postcss": "^8.4.21",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
     "stylelint-csstree-validator": "^1.9.0",

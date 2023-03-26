@@ -44,12 +44,22 @@ export const addVehicle = async (dispatch, details) => {
   }
 }
 
-export const getReservation = async (reservation) => {
+export const addReservation = async (dispatch, id, reserv) => {
   try {
-    dispatch(addReservation(reservation));
-    const res = await publicrequest.post('/add-reservation', reservation);
-    console.log(res.data);
+    const res = await publicRequest.post(`/reservations/user/${id}`, reserv)
+    const responseData = res.data;
+    delete responseData.headers;
+    dispatch(addSuccess(responseData))
   } catch (error) {
-    console.log(error);
+
+  }
+}
+
+export const deleteReservation = async (id) => {
+  try {
+    const res = await publicRequest.delete(`/reservations/${id}`)
+    return res
+  } catch (error) {
+
   }
 }

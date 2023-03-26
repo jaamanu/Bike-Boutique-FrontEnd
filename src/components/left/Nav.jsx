@@ -29,7 +29,6 @@ const Nav = () => {
             <RiAddCircleLine />
             Add a vehicle
           </NavLink>
-          
           <li className="link" onClick={logouts}>
             <RiLogoutCircleLine />
             Log out

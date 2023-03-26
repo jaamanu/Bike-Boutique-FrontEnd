@@ -32,7 +32,12 @@ const VehiclesDetails = () => {
             <p>Available:&nbsp; </p>
             <p>{state.available.toLocaleString()}</p>
           </div>
+<<<<<<< HEAD
           <div />
+=======
+          <div>
+          </div>
+>>>>>>> 504e1fc91f52ee4c65d4242107a0be8d619a8a96
 
         </div>
       </div>
