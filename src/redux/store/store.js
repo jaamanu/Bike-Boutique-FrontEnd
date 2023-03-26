@@ -11,12 +11,10 @@ import {
   PURGE,
   REGISTER
 } from 'redux-persist'
-import storage from 'redux-persist/lib/storage';
-import userSlice from '../user/user';
-import reservationSlice from '../reservation/reservation';
-import vehicleSlice from '../vehicles/vehicles';
-import addVehicleSlice from '../vehicles/addVehicle';
-
+import storage from 'redux-persist/lib/storage'
+import userSlice from '../user/user'
+import vehicleSlice from '../vehicles/vehicles'
+import addVehicleSlice from '../vehicles/addVehicle'
 
 const persistConfig = {
   key: 'root',
@@ -31,7 +29,6 @@ export const store = configureStore({
     user: persistedReducer,
     vehicles: vehicleSlice,
     addVehicle: addVehicleSlice,
-    addReserve:reservationSlice,
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({

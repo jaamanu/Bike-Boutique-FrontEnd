@@ -4,10 +4,15 @@ import React, { useEffect} from 'react'
 import { useSelector } from 'react-redux';
 
 
-const Reservations = ({ reservationId }) => {
- 
-    const  currentUser  = useSelector((state) => state.data)
+const Reservations = () => {
+    const currentUser = useSelector(state => state.currentUser);
+    if (currentUser) {
+        console.log(currentUser.id);
+      }
     const getReservation = async () => {
+        if (!currentUser) {
+            return;
+          }
         const response = await fetch(`http://localhost:3000/api/v1/users/${currentUser.id}/reservations`);
         const data = await response.json();
         getReservation(data);
@@ -20,7 +25,7 @@ const Reservations = ({ reservationId }) => {
 
     return (
         <div className="reservationsDiv">
-        <h2>Reservation Data:{currentUser}</h2>
+        <h2>Reservation Data:</h2>
    
         </div>
     )
