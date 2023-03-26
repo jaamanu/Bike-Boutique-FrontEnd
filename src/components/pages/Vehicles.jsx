@@ -19,7 +19,6 @@ const Vehicles = () => {
     useEffect(() => {
         dispatch(getVehicles());
     }, []);
-    console.log(vehicle)
 
     const [get, setGet] = useState(null)
 

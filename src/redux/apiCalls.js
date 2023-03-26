@@ -43,13 +43,3 @@ export const addVehicle = async (dispatch, details) => {
     dispatch(addFailure())
   }
 }
-
-export const getReservation = async (reservation) => {
-  try {
-    dispatch(addReservation(reservation));
-    const res = await publicrequest.post('/add-reservation', reservation);
-    console.log(res.data);
-  } catch (error) {
-    console.log(error);
-  }
-}
