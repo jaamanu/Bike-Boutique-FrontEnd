@@ -2,7 +2,6 @@
 import { publicRequest } from "../request";
 import { loginFailure, loginStart, loginSuccess } from "./user/user";
 import { addFailure, addStart, addSuccess } from "./vehicles/addVehicle";
-import { addReservation } from './reservation/reservation';
 
 export const login = async (dispatch, user) => {
   dispatch(loginStart());
@@ -41,15 +40,5 @@ export const addVehicle = async (dispatch, details) => {
 
   } catch (err) {
     dispatch(addFailure())
-  }
-}
-
-export const getReservation = async (reservation) => {
-  try {
-    dispatch(addReservation(reservation));
-    const res = await publicrequest.post('/add-reservation', reservation);
-    console.log(res.data);
-  } catch (error) {
-    console.log(error);
   }
 }

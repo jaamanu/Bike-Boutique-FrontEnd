@@ -6,9 +6,6 @@ import { useSelector } from 'react-redux';
 
 const Reservations = () => {
     const currentUser = useSelector(state => state.currentUser);
-    if (currentUser) {
-        console.log(currentUser.id);
-      }
     const getReservation = async () => {
         if (!currentUser) {
             return;

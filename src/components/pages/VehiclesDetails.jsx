@@ -33,9 +33,6 @@ const VehiclesDetails = () => {
             <p>{state.available.toLocaleString()}</p>
           </div>
           <div>
-            <NavLink to="/addreservation" className="reserve-link">
-              Reserve
-            </NavLink>
           </div>
 
         </div>
