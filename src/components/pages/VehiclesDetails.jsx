@@ -1,5 +1,5 @@
 import React from 'react';
-import { useLocation, NavLink } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import './styles/details.css';
 
 const VehiclesDetails = () => {
@@ -32,11 +32,7 @@ const VehiclesDetails = () => {
             <p>Available:&nbsp; </p>
             <p>{state.available.toLocaleString()}</p>
           </div>
-          <div>
-            <NavLink to="/addreservation" className="reserve-link">
-              Reserve
-            </NavLink>
-          </div>
+          <div />
 
         </div>
       </div>
