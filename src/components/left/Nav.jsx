@@ -24,14 +24,7 @@ const Nav = () => {
             <RiHome7Line />
             Home
           </NavLink>
-          <NavLink to="/reservations" className="link">
-            <RiReservedFill />
-            Reservations
-          </NavLink>
-          <NavLink to="/addreservation" className="link">
-            <RiAddCircleLine />
-            Add a reservation
-          </NavLink>
+        
           <NavLink to = "/addvehicle" className="link">
             <RiAddCircleLine />
             Add a vehicle
