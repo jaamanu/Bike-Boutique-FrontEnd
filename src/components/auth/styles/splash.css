@@ -6,7 +6,7 @@
 
 .splashDiv {
   height: 100vh;
-  background-image: linear-gradient(180deg, rgba(182, 175, 175, 0.2) 0, #a1a5a0cc 0), url('../../../assets/bike2.jpg');
+  background-image: linear-gradient(180deg, rgba(231, 237, 238, 0.984) 0, #8d7e7ecc 0), url('../../../assets/bike1.webp');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -40,7 +40,7 @@
   font-weight: 600;
   font-family: sans-serif;
   padding: 1rem;
-  background: green;
+  background: rgb(7, 162, 33);
   border-radius: 5rem;
   width: fit-content;
   transition: 0.5s ease-in-out;
@@ -50,7 +50,7 @@
 }
 
 .link:hover {
-  color: green;
+  color: rgb(1, 33, 114);
   background: #fff;
   transition: 0.5s ease-in-out;
 }

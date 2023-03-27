@@ -17,29 +17,29 @@ const Nav = () => {
 
   return (
     <div className="NavDiv">
-      <h2 className="NavH2">Fast-Bikes</h2>
+      <h1 className="NavH1">e-Bikes</h1>
       <nav>
         <ul>
           <NavLink to="/" className="link">
             <RiHome7Line />
-            Home
+            SHOWROOM
           </NavLink>
           <NavLink to="/reservations" className="link">
             <RiReservedFill />
-            Reservations
+            RESERVATION
           </NavLink>
           <NavLink to="/addreservation" className="link">
             <RiAddCircleLine />
-            Add a reservation
+            RESERVE e-BIKE
           </NavLink>
         
           <NavLink to = "/addvehicle" className="link">
             <RiAddCircleLine />
-            Add a vehicle
+            ADD e-BIKE
           </NavLink>
           <li className="link" onClick={logouts}>
             <RiLogoutCircleLine />
-            Log out
+            SIGN OUT
           </li>
         </ul>
       </nav>

@@ -35,7 +35,8 @@ const Vehicles = () => {
 
     return (
         <div className="vehiclesDiv">
-            <h1>FAST-BIKES</h1>
+            <h1>Available e-BIKES</h1>
+            <h2>Please select e-Bike</h2>
             <div className="vehicles">
                 <Swiper
                     modules={[Navigation, Pagination, Scrollbar, A11y]}
