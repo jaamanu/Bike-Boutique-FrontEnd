@@ -5,8 +5,8 @@ import './styles/splash.css';
 
 const Splash = () => (
   <div className="splashDiv">
-    <h1 className="splashHeader">Welcome to e-BIKES Reservations</h1>
-
+    <h1 className="splashHeader">BIKE-BOUTIQUE</h1>
+    <h3>Ride with Pride</h3>
     <div className="loginRegDiv">
       <Link to="/login" className="link">
         <BiLogIn className="iconLog" />

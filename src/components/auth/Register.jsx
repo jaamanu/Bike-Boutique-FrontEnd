@@ -15,8 +15,9 @@ const Register = () => {
   return (
     <div className="LoginDiv">
       <form className="LoginForm">
-        <h2>Create a new account</h2>
-        <input onChange={(e) => setName(e.target.value)} type="text" name="" id="" placeholder="Enter your name" />
+        <h2>Create Account</h2>
+        <input onChange={(e) => setName(e.target.value)} type="text" name="" id="" placeholder="Enter username" />
+        <input onChange={(e) => setName(e.target.value)} type="text" name="" id="" placeholder="Enter password" />
         <button onClick={registerUser} type="submit">Signup</button>
         <p>
           Have an account?

@@ -17,7 +17,7 @@ const Nav = () => {
 
   return (
     <div className="NavDiv">
-      <h1 className="NavH1">e-Bikes</h1>
+      <h1>BIKE-BOUTIQUE</h1>
       <nav>
         <ul>
           <NavLink to="/" className="link">
@@ -30,12 +30,12 @@ const Nav = () => {
           </NavLink>
           <NavLink to="/addreservation" className="link">
             <RiAddCircleLine />
-            RESERVE e-BIKE
+            RESERVE BIKE
           </NavLink>
         
           <NavLink to = "/addvehicle" className="link">
             <RiAddCircleLine />
-            ADD e-BIKE
+            ADD BIKE
           </NavLink>
           <li className="link" onClick={logouts}>
             <RiLogoutCircleLine />
