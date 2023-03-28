@@ -26,7 +26,7 @@
 
 .LoginDiv {
   height: 100vh;
-  background-color: yellow;
+  background-color: rgb(219, 246, 234);
   display: flex;
   justify-content: center;
   align-items: center;
