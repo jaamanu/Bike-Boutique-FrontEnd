@@ -6,10 +6,10 @@
 
 .splashDiv {
   height: 100vh;
-  background-image: linear-gradient(180deg, rgba(182, 175, 175, 0.2) 0, #a1a5a0cc 0), url('../../../assets/bike2.jpg');
+  background-image: url('../../../assets/Screenshot\ 2023-03-28\ at\ 02.09.28.png');
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+  background-size:cover;
+  /* background-position: center; */
   position: relative;
   align-items: center;
   justify-content: center;
@@ -18,10 +18,20 @@
 }
 
 .splashHeader {
-  color: #fff;
-  font-size: 25px;
+  margin-bottom: 40px;
+  color: #cac4c4;
+  font-size: 60px;
   font-family: sans-serif;
   text-align: center;
+}
+
+.splashDiv > h3 {
+  margin-top: -45px;
+  color: #b4b1b1;
+  font-size: 30px;
+  font-family: sans-serif;
+  text-align: center;
+  font-style: italic;
 }
 
 .loginRegDiv {
@@ -40,7 +50,7 @@
   font-weight: 600;
   font-family: sans-serif;
   padding: 1rem;
-  background: green;
+  background: rgb(14, 15, 14);
   border-radius: 5rem;
   width: fit-content;
   transition: 0.5s ease-in-out;
@@ -50,7 +60,7 @@
 }
 
 .link:hover {
-  color: green;
+  color: rgb(1, 33, 114);
   background: #fff;
   transition: 0.5s ease-in-out;
 }

@@ -1,11 +1,12 @@
 .vehicleImg {
   width: 80%;
-  height: 80%;
-  border-radius: 50%;
+  height: 100%;
+  border-radius: 70%;
   padding-left: 5px;
 }
 
 .vehiclesDiv {
+  background-color: white !important;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -17,12 +18,20 @@ p {
   padding: 10px;
   width: 90%;
   font-family: sans-serif;
-  color: lightseagreen;
+  color: white;
 }
 
 .vehiclesDiv > h1 {
   font-size: 25px;
   text-align: center;
+}
+
+.vehiclesDiv > h2 {
+  height: 50%;
+  font-size: 20px;
+  text-align: center;
+  text-decoration-line:underline;
+  color: grey;
 }
 
 .vehicleDiv {

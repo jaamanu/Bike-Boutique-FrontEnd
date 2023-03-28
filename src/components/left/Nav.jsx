@@ -17,21 +17,29 @@ const Nav = () => {
 
   return (
     <div className="NavDiv">
-      <h2 className="NavH2">Fast-Bikes</h2>
+      <h1>BIKE-BOUTIQUE</h1>
       <nav>
         <ul>
           <NavLink to="/" className="link">
             <RiHome7Line />
-            Home
+            SHOWROOM
+          </NavLink>
+          <NavLink to="/reservations" className="link">
+            <RiReservedFill />
+            RESERVATION
+          </NavLink>
+          <NavLink to="/addreservation" className="link">
+            <RiAddCircleLine />
+            RESERVE BIKE
           </NavLink>
         
           <NavLink to = "/addvehicle" className="link">
             <RiAddCircleLine />
-            Add a vehicle
+            ADD BIKE
           </NavLink>
           <li className="link" onClick={logouts}>
             <RiLogoutCircleLine />
-            Log out
+            SIGN OUT
           </li>
         </ul>
       </nav>

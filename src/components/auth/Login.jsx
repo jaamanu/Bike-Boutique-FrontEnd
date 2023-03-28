@@ -17,13 +17,14 @@ const Login = () => {
   return (
     <div className="LoginDiv">
       <form className="LoginForm">
-        <h2>Login to your account</h2>
-        <input onChange={(e) => setname(e.target.value)} type="text" name="" id="" placeholder="Enter your name address" />
+        <h1>Login</h1>
+        <input onChange={(e) => setname(e.target.value)} type="text" username="" id="" placeholder="username" />
+        <input onChange={(e) => setname(e.target.value)} type="text" password="" id="" placeholder="password" />
         <button type="submit" onClick={handleLogin} >Login</button>
         <p>
-          Don&apos;t have an account?
+          Don&apos;t Have an account?
           <Link to="/register" className="Loginlink">
-            &nbsp; create an account...
+            &nbsp; Create an account...
           </Link>
         </p>
       </form>

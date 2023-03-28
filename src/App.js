@@ -10,6 +10,8 @@ import Nav from './components/left/Nav';
 import Vehicles from './components/pages/Vehicles';
 import VehiclesDetails from './components/pages/VehiclesDetails';
 import AddVehicles from './components/pages/AddVehicles';
+import AddReservation from './components/pages/AddReservation';
+
 
 const App = () =>{
   const { currentUser } = useSelector((state) => state.user)
@@ -21,7 +23,8 @@ const App = () =>{
         </div>}
         <div className="navRoute">
           <Routes>
-          
+            <Route path={"/addreservation"} element={currentUser ? <AddReservation /> : <Navigate to="/" />} />
+            <Route path={"/reservations"} element={currentUser ? <Reservations /> : <Navigate to="/" />} />
             <Route path={"/details/:id"} element={currentUser ? <VehiclesDetails /> : <Navigate to="/" />} />
             <Route path={"/addvehicle"} element={currentUser ? <AddVehicles /> : <Navigate to="/" />} />
             <Route index element={currentUser ? <Vehicles /> : <Splash />} />
