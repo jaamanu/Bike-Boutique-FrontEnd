@@ -35,13 +35,13 @@ const Vehicles = () => {
 
   return (
     <div className="vehiclesDiv">
-      <h1>Available BIKES</h1>
+      <h1>BIKES ON SHOWROOM </h1>
       <h2>Please select a Bike</h2>
       <div className="vehicles">
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y]}
           spaceBetween={50}
-          slidesPerView={2}
+          slidesPerView={3}
           navigation
           pagination={{ clickable: true }}
         >
