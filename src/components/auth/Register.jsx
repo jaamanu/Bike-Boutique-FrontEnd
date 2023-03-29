@@ -26,7 +26,7 @@ const Register = () => {
       <form className="LoginForm">
         <h2>Create Account</h2>
         <input onChange={(e) => setName(e.target.value)} type="text" name="" id="" placeholder="Enter username" />
-        <input onChange={(e) => setName(e.target.value)} type="text" name="" id="" placeholder="Enter password" />
+        {/* <input onChange={(e) => setName(e.target.value)} type="text" name="" id="" placeholder="Enter password" /> */}
         <button onClick={registerUser} type="submit">Signup</button>
         {err && setTimeout(() => {setErr(null)}, 3000) && <span>{err}</span>}
         <p>

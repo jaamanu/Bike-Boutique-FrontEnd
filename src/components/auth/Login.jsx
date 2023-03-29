@@ -18,8 +18,8 @@ const Login = () => {
     <div className="LoginDiv">
       <form className="LoginForm">
         <h1>Login</h1>
-        <input onChange={(e) => setname(e.target.value)} type="text" username="" id="" placeholder="username" />
-        <input onChange={(e) => setname(e.target.value)} type="text" password="" id="" placeholder="password" />
+        <input onChange={(e) => setname(e.target.value)} type="text" name="" id="" placeholder="name" />
+        {/* <input onChange={(e) => setname(e.target.value)} type="text" password="" id="" placeholder="password" /> */}
         <button type="submit" onClick={handleLogin} >Login</button>
         <p>
           Don&apos;t Have an account?
