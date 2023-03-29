@@ -30,7 +30,7 @@ const AddReservation = () => {
     }
     const year = newDate.getFullYear()
     const formatDate = `${year}-${newMonth}-${day}`
-
+    console.log(currentUser.id)
     const addReserv = (e) => {
         e.preventDefault()
         if (city === '') {
@@ -61,7 +61,7 @@ const AddReservation = () => {
         else {
             setMotorErr(null)
         }
-        addReservation(dispatch, currentUser.data.id, { city, users_id: currentUser.data.id, motorcycles_id: motorcycles, start_date: startDate, end_date: endDate });
+        addReservation(dispatch, currentUser.id, { city, user_id: currentUser.id, motorcycle_id: motorcycles, start_date: startDate, end_date: endDate });
         navigate('/reservations');
     }
 
@@ -69,6 +69,7 @@ const AddReservation = () => {
         <div className="LoginDiv">
             <form className='LoginForm'>
                 <select onChange={(e) => setMotorcycle(e.target.value)} name="" id="">
+                <option>Select</option>
                     {vehicle.vehicles.map((vehicle) => {
                         return (
                             <option key={vehicle.id} value={vehicle.id}>{vehicle.name}</option>
