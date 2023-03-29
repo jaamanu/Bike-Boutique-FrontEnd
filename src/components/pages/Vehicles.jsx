@@ -14,76 +14,54 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
 const Vehicles = () => {
-    const dispatch = useDispatch();
-    const vehicle = useSelector((state) => state.vehicles)
-    useEffect(() => {
-        dispatch(getVehicles());
-    }, []);
+  const dispatch = useDispatch();
+  const vehicle = useSelector((state) => state.vehicles)
+  useEffect(() => {
+    dispatch(getVehicles());
+  }, []);
 
-    const [get, setGet] = useState(null)
+  const [get, setGet] = useState(null)
 
-    const getId = (id) => {
-        // getVehicleId(dispatch, { id })
-        const getVehicleId = async () => {
-            const response = await fetch(`http://localhost:3000/api/v1/motorcycles/${id}`);
-            const data = await response.json();
-            setGet(data)
-            return data;
-        };
-        return getVehicleId
-    }
+  const getId = (id) => {
+    // getVehicleId(dispatch, { id })
+    const getVehicleId = async () => {
+      const response = await fetch(`http://localhost:3000/api/v1/motorcycles/${id}`);
+      const data = await response.json();
+      setGet(data)
+      return data;
+    };
+    return getVehicleId
+  }
 
-    return (
-        <div className="vehiclesDiv">
-            <h1>Available e-BIKES</h1>
-            <h2>Please select e-Bike</h2>
-            <div className="vehicles">
-                <Swiper
-                    modules={[Navigation, Pagination, Scrollbar, A11y]}
-                    spaceBetween={10}
-                    slidesPerView={3}
-                    navigation
-                    pagination={{ clickable: true }}
-                    breakpoints={{
-                        0: {
-                          slidesPerView: 1,
-                        },
-                        400:{
-                          slidesPerView:2,
-                        },
-                        639: {
-                          slidesPerView: 3,
-                        },
-                        865:{
-                          slidesPerView:4
-                        },
-                        1000:{
-                          slidesPerView:5
-                        },
-                        1500:{
-                          slidesPerView:6
-                        },
-                        1700:{
-                          slidesPerView:7
-                        }
-                      }}
+  return (
+    <div className="vehiclesDiv">
+      <h1>Available BIKES</h1>
+      <h2>Please select a Bike</h2>
+      <div className="vehicles">
+        <Swiper
+          modules={[Navigation, Pagination, Scrollbar, A11y]}
+          spaceBetween={50}
+          slidesPerView={2}
+          navigation
+          pagination={{ clickable: true }}
+        >
+          {vehicle.vehicles.map((veh) => (
+            <SwiperSlide>
+              <div className="vehicleDiv">
+                <NavLink onClick={getId(veh.id)} state={veh} to={`/details/${veh.id}`}>
+                  <img src={veh.image} className="vehicleImg" alt="" />
+                  <h3>{veh.name}</h3>
+                  <p>{veh.description}</p>
+                </NavLink>
+              </div>
+            </SwiperSlide>
 
-                >
-                    {vehicle.vehicles.map((veh) => (
-                        <SwiperSlide>
-                            <div className="vehicleDiv">
-                            <NavLink onClick={getId(veh.id)} state={veh} to={`/details/${veh.id}`}>
-                                <img src={veh.image} className="vehicleImg" alt="" />
-                                <h3>{veh.name}</h3>
-                                <p>{veh.description}</p>
-                                </NavLink>
-                            </div>
-                        </SwiperSlide>
-                    ))}
-                </Swiper>
-            </div>
-        </div>
-    )
+          ))}
+        </Swiper>
+
+      </div>
+    </div>
+  )
 }
 
 export default Vehicles

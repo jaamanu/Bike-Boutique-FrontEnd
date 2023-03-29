@@ -44,14 +44,11 @@ export const addVehicle = async (dispatch, details) => {
 }
 
 export const addReservation = async (dispatch, id, reserv) => {
-  try {
-    const res = await publicRequest.post(`/reservations/user/${id}`, reserv)
-    const responseData = res.data;
-    delete responseData.headers;
-    dispatch(addSuccess(responseData))
-  } catch (error) {
-
-  }
+  const res = await publicRequest.post(`/reservations/user/${id}`, reserv)
+  const responseData = res.data;
+  delete responseData.headers;
+  console.log('hey')
+  dispatch(addSuccess(responseData))
 }
 
 export const deleteReservation = async (id) => {

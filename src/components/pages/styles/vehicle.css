@@ -1,12 +1,12 @@
 .vehicleImg {
-  width: 80%;
+  width: 100%;
   height: 100%;
-  border-radius: 70%;
+  border-radius:10px;
   padding-left: 5px;
 }
 
 .vehiclesDiv {
-  background-color: white !important;
+  background-image: linear-gradient(to bottom, rgba(151, 148, 148, 0.951), rgba(217, 211, 211, 0.717));
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -18,7 +18,8 @@ p {
   padding: 10px;
   width: 90%;
   font-family: sans-serif;
-  color: white;
+  color: rgb(9, 9, 9);
+  font-weight:200;
 }
 
 .vehiclesDiv > h1 {
@@ -31,7 +32,7 @@ p {
   font-size: 20px;
   text-align: center;
   text-decoration-line:underline;
-  color: grey;
+  color:#fff;
 }
 
 .vehicleDiv {
@@ -49,6 +50,7 @@ p {
 }
 
 .vehicles {
+  margin-top: 15%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -64,6 +66,6 @@ p {
 
   .vehicleImg {
     width: 80%;
-    max-width: 300px;
+    max-width: 600px;
   }
 }

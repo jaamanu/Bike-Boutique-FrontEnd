@@ -11,7 +11,7 @@ const Reservations = () => {
     const getReservation = async () => {
         const response = await fetch(`http://localhost:3000/api/v1/users/${currentUser.data.id}/reservations`);
         const data = await response.json();
-        getReservations(data.data)
+        getReservations(JSON.parse(data.data))
         return data;
     };
 
@@ -26,16 +26,19 @@ const Reservations = () => {
 
     return (
         <div className="reservationsDiv">
-            {reservations.map((reserv) => (
-                <div key={reserv.id}>
-                    <h1>RESERVED</h1>
-                    {/* <p>{reserv.motorcycle.name}</p> */}
-                    <p>{reserv.city}</p>
-                    <p>{reserv.start_date}</p>
-                    <p>{reserv.end_date}</p>
-                    <button type='submit' onClick={() => deleteIt(reserv.id)}>Delete</button>
-                </div>
-            ))}
+            {reservations &&
+                reservations.map((reserv) => {
+                    console.log(reserv)
+                    return (
+                        <div key={reserv.id}>
+                            <h1>{reserv.motorcycles.name}</h1>
+                            <h5>{reserv.city}</h5>
+                            <h5>{reserv.start_date}</h5>
+                            <h5>{reserv.end_date}</h5>
+                            <button type='submit' onClick={() => deleteIt(reserv.id)}>Delete</button>
+                        </div>
+                    )
+                })}
         </div>
     )
 }
