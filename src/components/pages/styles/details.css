@@ -1,4 +1,4 @@
-.detailsWordsDiv > div {
+.detailsWordsDiv>div {
   font-size: 15px;
   font-weight: 600;
   width: 100%;
@@ -6,11 +6,12 @@
   justify-content: center;
 }
 
-.detailsWordsDiv > h2 {
+.detailsWordsDiv>div>p {
   font-weight: 600;
+  color: #111
 }
 
-.detailsSm > h2 {
+.detailsSm>h2 {
   font-weight: 600;
   font-size: 25px;
   margin-bottom: 1rem;
@@ -18,19 +19,25 @@
 
 .detailsDiv {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 0.5rem;
   font-family: sans-serif;
   text-align: start;
   width: 100%;
+  padding: 2rem 0;
 }
 
-.detailsWordsDiv > div:nth-child(odd) {
+.detailsWordsDiv>div:nth-child(odd) {
   background: #c5c5c7;
   color: #2e2d2d;
 }
 
-.detailsWordsDiv > div > p {
+.detailsImg {
+  height: 400px;
+  object-fit: contain;
+}
+
+.detailsWordsDiv>div>p {
   text-align: left;
 }
 
