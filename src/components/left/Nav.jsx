@@ -7,7 +7,7 @@ import { useDispatch } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import { logout } from '../../redux/apiCalls';
 import './style/nav.css';
-
+import img from '../../assets/Screenshot 2023-03-29 at 13.56.18.png';
 const Nav = () => {
   const dispatch = useDispatch();
 
@@ -17,7 +17,7 @@ const Nav = () => {
 
   return (
     <div className="NavDiv">
-      <h1>BIKE BOUTIQUE</h1>
+      <img src={img}/>
       <nav>
         <ul>
           <NavLink to="/" className="link">

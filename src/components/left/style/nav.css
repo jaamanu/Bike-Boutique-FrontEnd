@@ -1,6 +1,6 @@
 .NavDiv {
   height: 100%;
-  width: fit-content;
+  width: 60%;
 }
 
 .NavDiv > nav {
@@ -12,10 +12,14 @@
   justify-content: center;
 }
 
-.NavDiv > h1 {
+.NavDiv > img {
   text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin-top: 40px;
+  margin-top: 60px;
+  width: 300px;
+  height: 200px;
+  /* padding-left: 10px; */
+  align-items: center;
 }
 
 .NavH1 {
@@ -46,14 +50,14 @@
 
 .NavDiv > nav > ul > li:hover,
 .NavDiv > nav > ul .link:hover {
-  background: green;
+  background: rgb(64, 65, 64);
   color: #fff;
   cursor: pointer;
   transition: 0.5s ease-in-out;
 }
 
 .NavDiv > nav > ul .link.active {
-  background: green;
+  background: rgb(49, 50, 49);
   color: #fff;
 }
 
