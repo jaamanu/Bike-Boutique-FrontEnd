@@ -48,11 +48,14 @@
 }
 
 .btn {
-  background-image: linear-gradient(to bottom,  rgb(243, 217, 235),  rgb(242, 248, 242));
+  background-image: linear-gradient(to bottom,  rgb(228, 224, 227),  rgb(242, 248, 242));
   border:rgb(145, 47, 47);
   box-shadow: -5px -5px 15px #858484, 5px 5px 15px #c4c3c3, inset 5px 5px 10px #bebdbd, inset -5px -5px 10px #cccaca;
   padding: 14px 6px;
-  
+  max-width: 90%;
+  max-height: 70vh;
+  min-width: 90%;
+  min-height: 70vh;
 }
 
 .name {
