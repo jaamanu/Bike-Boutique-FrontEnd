@@ -8,15 +8,26 @@ const userSlice = createSlice({
     error: false,
   },
   reducers: {
-    loginStart: (state) => ({ ...state, isFetching: true }),
+    loginStart: (state) => ({
+      ...state,
+      isFetching: true,
+    }),
     loginSuccess: (state, action) => {
       const token = action.payload;
       localStorage.setItem('token', JSON.stringify(token));
       const getToken = JSON.parse(localStorage.getItem('token'));
 
-      return { ...state, isFetching: false, currentUser: getToken };
+      return {
+        ...state,
+        isFetching: false,
+        currentUser: getToken,
+      };
     },
-    loginFailure: (state) => ({ ...state, isFetching: false, error: true }),
+    loginFailure: (state) => ({
+      ...state,
+      isFetching: false,
+      error: true,
+    }),
   },
 });
 

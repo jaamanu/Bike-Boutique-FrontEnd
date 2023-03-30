@@ -7,9 +7,19 @@ const addVehicleSlice = createSlice({
     error: false,
   },
   reducers: {
-    addStart: (state) => ({ ...state, isFetching: true }),
-    addSuccess: (state) => ({ ...state, isFetching: false }),
-    addFailure: (state) => ({ ...state, isFetching: false, error: true }),
+    addStart: (state) => ({
+      ...state,
+      isFetching: true,
+    }),
+    addSuccess: (state) => ({
+      ...state,
+      isFetching: false,
+    }),
+    addFailure: (state) => ({
+      ...state,
+      isFetching: false,
+      error: true,
+    }),
   },
 });
 
