@@ -17,8 +17,7 @@ const Nav = () => {
 
   return (
     <div className="NavDiv">
-      
-      
+
       <nav>
       <img className='imgnav' src={img}/>
       <div className='uldiv'>
