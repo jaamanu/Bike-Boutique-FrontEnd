@@ -30,7 +30,7 @@ const AddReservation = () => {
     const year = newDate.getFullYear()
     const formatDate = `${year}-${newMonth}-${day}`
     console.log(currentUser.id)
-    const addReserv = (e) => {
+    const addReserv = async (e) => {
         e.preventDefault()
         if (city === '') {
             setCityErr('City should be set')
@@ -60,7 +60,7 @@ const AddReservation = () => {
         else {
             setMotorErr(null)
         }
-        addReservation(dispatch, currentUser.id, { city, user_id: currentUser.id, motorcycle_id: motorcycles, start_date: startDate, end_date: endDate });
+        await addReservation(dispatch, currentUser.id, { city, user_id: currentUser.id, motorcycle_id: motorcycles, start_date: startDate, end_date: endDate });
         navigate('/reservations');
     }
 

@@ -26,7 +26,7 @@ const Reservations = () => {
             
         }
     }
-    console.log(success)
+    console.log(currentUser)
     useEffect(() => {
         getReservation()
     }, [])
