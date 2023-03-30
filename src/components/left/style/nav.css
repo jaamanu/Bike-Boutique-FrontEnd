@@ -15,8 +15,8 @@
   height: 15vh;
 }
 
- li,
- .link {
+li,
+.link {
   padding: 0.5rem;
   border-radius: 12px;
   background: #fff;
@@ -26,8 +26,8 @@
   font-weight: 700;
 }
 
- li:hover,
- .link:hover {
+li:hover,
+.link:hover {
   background: rgb(37, 102, 37);
   color: #fff;
   cursor: pointer;
