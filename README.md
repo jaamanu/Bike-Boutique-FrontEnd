@@ -21,17 +21,17 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Ebube App <a name="about-project"></a>
-   Ebube App
+# 📖 BIKE BOUTIQUE <a name="about-project"></a>
+  BIKE BOUTIQUE
 # 📖 Description <a name="Description-Note"></a>
-> Ebube App is a web application for managing motorcycles renting. The application is built using React for the front-end, Rails for the back-end, and PostgreSQL as the database.
+> BIKE BOUTIQUE is a web application for managing motorcycles renting. The application is built using React for the front-end, Rails for the back-end, and PostgreSQL as the database.
 
 Booking application
 
 ## Project presentation link
 
 [Presentation of APP]
-- [FrontEndrepo](https://github.com/eerapheal/Full_stack_project)
+- [FrontEndrepo](https://github.com/jaamanu/user_interface)
 - [BackENDrepo](https://github.com/eerapheal/Full_stack_project)
 
 # Live Demo Application link (coming soon)
@@ -86,10 +86,6 @@ install this project with:
 To start the application, run the following command
 ```
 npm run start
-```
-### Run tests 
-```
-jest test
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
