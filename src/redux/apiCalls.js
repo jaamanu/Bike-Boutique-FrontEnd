@@ -5,14 +5,12 @@ import { addFailure, addStart, addSuccess } from "./vehicles/addVehicle";
 
 export const login = async (dispatch, user) => {
   dispatch(loginStart());
-  try {
+ 
     const res = await publicRequest.post("/login", user)
     const responseData = res.data;
     delete responseData.headers;
     dispatch(loginSuccess(responseData))
-  } catch (err) {
-    dispatch(loginFailure())
-  }
+
 }
 export const logout = (dispatch) => {
   dispatch(loginSuccess(false))

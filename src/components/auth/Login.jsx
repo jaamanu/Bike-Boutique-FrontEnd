@@ -7,12 +7,19 @@ import './styles/login.css';
 
 const Login = () => {
   const [name, setname] = useState('')
+  const [err, setErr] = useState(null);
   const dispatch = useDispatch()
 
-  const handleLogin = (e) => {
+  const handleLogin = async (e) => {
     e.preventDefault()
+try {
+  await login(dispatch, { name });
+} catch (error) {
+  console.log(error.response.data.message)
+  setErr(error.response.data.message);
 
-    login(dispatch, { name });
+}
+    
   }
   return (
     <div className="LoginDiv">
@@ -21,6 +28,7 @@ const Login = () => {
         <input onChange={(e) => setname(e.target.value)} type="text" name="" id="" placeholder="name" />
         {/* <input onChange={(e) => setname(e.target.value)} type="text" password="" id="" placeholder="password" /> */}
         <button type="submit" onClick={handleLogin} >Login</button>
+        {err && setTimeout(() => {setErr(null)}, 3000) && <span>{err}</span>}
         <p>
           Don&apos;t Have an account?
           <Link to="/register" className="Loginlink">
