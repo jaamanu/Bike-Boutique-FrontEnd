@@ -1,17 +1,12 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const reservationSlice = createSlice({
-
   name: 'reservation',
   initialState: {
     data: '',
   },
   reducers: {
-
-    addReservation: (state, action) => {
-      // eslint-disable-next-line no-param-reassign
-      state.data = action.payload;
-    },
+    addReservation: (state, action) => ({ ...state, data: action.payload }),
   },
 });
 
