@@ -1,4 +1,3 @@
-/* eslint-disable */
 import React from 'react';
 import {
   RiLogoutCircleLine, RiReservedFill, RiHome7Line, RiAddCircleLine, RiDeleteBin6Line,

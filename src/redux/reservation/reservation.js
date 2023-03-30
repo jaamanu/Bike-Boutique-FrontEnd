@@ -1,4 +1,3 @@
-// eslint-disable-next-line no-param-reassign
 import { createSlice } from '@reduxjs/toolkit';
 
 const reservationSlice = createSlice({
@@ -10,7 +9,6 @@ const reservationSlice = createSlice({
   reducers: {
 
     addReservation: (state, action) => {
-      // eslint-disable-next-line no-param-reassign
       state.data = action.payload;
     },
   },

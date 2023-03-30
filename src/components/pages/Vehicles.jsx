@@ -1,4 +1,3 @@
-/* eslint-disable */
 import React, { useEffect, useState } from 'react'
 import './styles/vehicle.css';
 import { useDispatch, useSelector } from 'react-redux';

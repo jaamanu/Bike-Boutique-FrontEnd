@@ -1,4 +1,3 @@
-/* eslint-disable */
 import { publicRequest } from "../request";
 import { loginFailure, loginStart, loginSuccess } from "./user/user";
 import { addFailure, addStart, addSuccess } from "./vehicles/addVehicle";
