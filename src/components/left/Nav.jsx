@@ -16,7 +16,7 @@ const Nav = () => {
 
   return (
     <div className="NavDiv">
-      <img src={img}/>
+      <img className="logo" src={img}/>
       <nav>
         <ul>
           <NavLink to="/" className="link">

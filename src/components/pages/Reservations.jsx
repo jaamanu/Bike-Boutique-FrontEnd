@@ -32,8 +32,10 @@ const Reservations = () => {
     }, [])
 
     return (
+        <div className="reservation_title">
+        <h1 className='reserved_title'>RESERVATION</h1>
         <div className="reservationsDiv">
-        {success && <span>{success}</span>}
+        {success && setTimeout(() => {setSuccess(null)},3000) && <span className='success'>{success}</span>}
             {reservations &&
                 reservations.map((reserv) => {
                     console.log(reserv)
@@ -47,6 +49,7 @@ const Reservations = () => {
                         </div>
                     )
                 })}
+        </div>
         </div>
     )
 }
