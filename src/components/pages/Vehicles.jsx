@@ -36,7 +36,7 @@ const Vehicles = () => {
   return (
     <div className="vehiclesDiv">
       <h1 className="like" >BIKES ON SHOWROOM </h1>
-      <h2>Please select a Bike</h2>
+      <h2 className="select">Please select a Bike</h2>
       <div className="vehicles">
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y]}
