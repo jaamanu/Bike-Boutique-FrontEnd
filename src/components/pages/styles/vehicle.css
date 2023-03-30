@@ -1,8 +1,7 @@
 .vehicleImg {
   width: 100%;
   height: 100%;
-  border-radius:30px;
-
+  border-radius: 30px;
 }
 
 .vehiclesDiv {
@@ -19,7 +18,7 @@ p {
   width: 90%;
   font-family: sans-serif;
   color: rgb(9, 9, 9);
-  font-weight:200;
+  font-weight: 200;
 }
 
 .vehiclesDiv > h1 {
@@ -32,8 +31,8 @@ p {
   height: 50%;
   font-size: 20px;
   text-align: center;
-  text-decoration-line:underline;
-  color:#fff;
+  text-decoration-line: underline;
+  color: #fff;
 }
 
 .vehicleDiv {
@@ -52,7 +51,6 @@ p {
 
 .vehicles {
   margin-top: 5%;
-
 }
 
 @media only screen and (max-width: 768px) {

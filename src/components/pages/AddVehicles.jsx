@@ -19,6 +19,7 @@ const AddVehicles = () => {
         e.preventDefault()
 
         addVehicle(dispatch, { name, image, description, price, model, available });
+        navigate('/');
     }
 
     return (
