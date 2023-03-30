@@ -24,7 +24,6 @@
   transition: 0.5s ease-in-out;
   border: none;
   padding: 0.5rem;
-  border-radius: 6px;
   color: #fff;
   font-weight: 300;
 }
@@ -43,9 +42,4 @@
 .Loginlink {
   color: rgb(8, 190, 2);
   text-decoration: none;
-}
-
-.LoginForm > button {
-  font-weight: 300;
-  color: #fff;
 }

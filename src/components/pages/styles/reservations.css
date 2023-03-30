@@ -8,7 +8,8 @@
   padding: 0.5rem;
   color: #111;
 }
-.reservationsDiv>div {
+
+.reservationsDiv > div {
   border: 1px solid black;
   padding: 1rem;
   border-radius: 10px;
@@ -16,10 +17,12 @@
   flex-basis: 30%;
   text-align: center;
 }
-.reservationsDiv>div>h1 {
+
+.reservationsDiv > div > h1 {
   text-decoration: solid;
 }
-.success{
+
+.success {
   position: absolute;
   top: 0;
   color: #0f0e0e;
@@ -27,28 +30,22 @@
   background: greenyellow;
   padding: 0.5rem;
 }
-.reservation_title{
+
+.reservation_title {
   background-image: url("../../../assets/bikers.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
 }
-.reserved_title{
+
+.reserved_title {
   text-align: center;
   color: #fff;
 }
-@media only screen and (max-width: 768px){
-  .reservationsDiv{
+
+@media only screen and (max-width: 768px) {
+  .reservationsDiv {
     flex-direction: column;
     max-height: 95vh;
     overflow-y: auto;
   }
 }
-
-
-
-
-
-
-
-
-
