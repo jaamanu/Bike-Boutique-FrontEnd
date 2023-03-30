@@ -35,7 +35,7 @@ const Vehicles = () => {
 
   return (
     <div className="vehiclesDiv">
-      <h1>BIKES ON SHOWROOM </h1>
+      <h1 className="like" >BIKES ON SHOWROOM </h1>
       <h2>Please select a Bike</h2>
       <div className="vehicles">
         <Swiper
