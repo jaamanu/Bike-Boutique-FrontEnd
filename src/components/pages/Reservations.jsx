@@ -1,4 +1,3 @@
-/* eslint-disable */
 import './../pages/styles/reservations.css'
 
 import React, { useEffect, useState } from 'react'
