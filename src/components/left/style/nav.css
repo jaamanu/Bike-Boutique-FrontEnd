@@ -1,25 +1,18 @@
-.NavDiv {
-  height: 100%;
-  width: 60%;
-}
 
-.NavDiv > nav {
-  width: 100%;
+.NavDiv {
+  width: 25vw;
   display: flex;
   font-size: 20px;
-  height: 60%;
+  height: 100%;
   flex-direction: column;
-  justify-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 40px;
+  align-items: center;
 }
 
-.NavDiv > img {
-  text-align: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin-top: 60px;
-  width: 300px;
-  height: 200px;
-  /* padding-left: 10px; */
-  align-items: center;
+.imgnav {
+  width: 23vw;
+  height: 20vh;
 }
 
 .NavH1 {
@@ -28,7 +21,7 @@
   padding: 0.5rem;
 }
 
-.NavDiv > nav > ul {
+ul {
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -37,32 +30,36 @@
   font-family: sans-serif;
 }
 
-.NavDiv > nav > ul > li,
-.NavDiv > nav > ul .link {
+ li,
+ .link {
   padding: 0.5rem;
   border-radius: 12px;
-  width: 100%;
+  /* width: 100%; */
   background: #fff;
   color: #111;
   transition: 0.5s ease-in-out;
   font-size: 16px;
 }
 
-.NavDiv > nav > ul > li:hover,
-.NavDiv > nav > ul .link:hover {
+ li:hover,
+ .link:hover {
   background: rgb(64, 65, 64);
   color: #fff;
   cursor: pointer;
   transition: 0.5s ease-in-out;
 }
 
-.NavDiv > nav > ul .link.active {
+.link.active {
   background: rgb(49, 50, 49);
   color: #fff;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .NavDiv {
-    width: 100%;
+    width: 15vw;
+  }
+
+  .imgnav {
+    width: 15vw;
   }
 }

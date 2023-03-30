@@ -17,8 +17,10 @@ const Nav = () => {
 
   return (
     <div className="NavDiv">
-      <img src={img}/>
+      
+      
       <nav>
+      <img className='imgnav' src={img}/>
         <ul>
           <NavLink to="/" className="link">
             <RiHome7Line />
