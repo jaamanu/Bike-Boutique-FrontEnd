@@ -21,6 +21,7 @@ const Nav = () => {
       
       <nav>
       <img className='imgnav' src={img}/>
+      <div className='uldiv'>
         <ul>
           <NavLink to="/" className="link">
             <RiHome7Line />
@@ -44,6 +45,7 @@ const Nav = () => {
             SIGN OUT
           </li>
         </ul>
+        </div>
       </nav>
     </div>
   )
