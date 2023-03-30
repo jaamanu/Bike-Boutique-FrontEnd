@@ -1,4 +1,3 @@
-// eslint-disable-next-line no-param-reassign
 import { createSlice } from '@reduxjs/toolkit';
 
 const reservationSlice = createSlice({

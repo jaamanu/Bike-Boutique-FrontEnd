@@ -1,17 +1,18 @@
-/* eslint-disable */
-import React, { useEffect, useState } from "react";
-import "./styles/vehicle.css";
-import { useDispatch, useSelector } from "react-redux";
-import { NavLink } from "react-router-dom";
-import { getVehicles } from "../../redux/vehicles/vehicles";
+import React, { useEffect, useState } from 'react';
+import './styles/vehicle.css';
+import { useDispatch, useSelector } from 'react-redux';
+import { NavLink } from 'react-router-dom';
+import { getVehicles } from '../../redux/vehicles/vehicles';
 // Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
-import "swiper/css";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
+import 'swiper/css';
+import {
+  Navigation, Pagination, Scrollbar, A11y,
+} from 'swiper';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
 const Vehicles = () => {
   const dispatch = useDispatch();
@@ -26,7 +27,7 @@ const Vehicles = () => {
     // getVehicleId(dispatch, { id })
     const getVehicleId = async () => {
       const response = await fetch(
-        `http://localhost:3000/api/v1/motorcycles/${id}`
+        `http://localhost:3000/api/v1/motorcycles/${id}`,
       );
       const data = await response.json();
       setGet(data);
