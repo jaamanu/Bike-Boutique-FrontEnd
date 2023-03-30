@@ -20,14 +20,12 @@ export const logout = (dispatch) => {
 
 export const createUser = async (dispatch, user) => {
   dispatch(loginStart());
-  try {
+  
     const res = await publicRequest.post("/register", user)
     const responseData = res.data;
     delete responseData.headers;
     dispatch(loginSuccess(responseData))
-  } catch (err) {
-    dispatch(loginFailure())
-  }
+  
 }
 
 export const addVehicle = async (dispatch, details) => {
@@ -52,10 +50,6 @@ export const addReservation = async (dispatch, id, reserv) => {
 }
 
 export const deleteReservation = async (id) => {
-  try {
     const res = await publicRequest.delete(`/reservations/${id}`)
     return res
-  } catch (error) {
-
-  }
 }
