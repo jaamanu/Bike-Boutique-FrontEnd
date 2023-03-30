@@ -36,7 +36,7 @@ const Vehicles = () => {
   return (
     <div className="vehiclesDiv">
       <h1 className="like" >BIKES ON SHOWROOM </h1>
-      <h2 className="select">Please select a Bike</h2>
+      <h2 className="select">Please click the box to select a bike</h2>
       <div className="vehicles">
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y]}
@@ -49,9 +49,11 @@ const Vehicles = () => {
             <SwiperSlide>
               <div className="vehicleDiv">
                 <NavLink onClick={getId(veh.id)} state={veh} to={`/details/${veh.id}`}>
+                  <button className="btn">
                   <img src={veh.image} className="vehicleImg" alt="" />
-                  <h3>{veh.name}</h3>
-                  <p>{veh.description}</p>
+                  <h3 className="name">{veh.name}</h3>
+                  <p className="desc">{veh.description}</p>
+                  </button>
                 </NavLink>
               </div>
             </SwiperSlide>
